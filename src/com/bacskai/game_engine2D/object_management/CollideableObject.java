@@ -1,5 +1,6 @@
-package com.bacskai.game_engine2D;
+package com.bacskai.game_engine2D.object_management;
 
+import com.bacskai.game_engine2D.GameObject;
 import com.bacskai.game_engine2D.geometry.Shape;
 
 /**
