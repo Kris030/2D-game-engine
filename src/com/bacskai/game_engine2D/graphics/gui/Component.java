@@ -3,7 +3,8 @@
  */
 package com.bacskai.game_engine2D.graphics.gui;
 
-import com.bacsai.game_engine2D;
+import com.bacskai.game_engine2D.GameObject;
+import com.bacskai.game_engine2D.Renderable;
 
 /**
  * @author hentesopossszum
