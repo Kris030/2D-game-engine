@@ -1,4 +1,4 @@
-package com.bacskai.game_engine2D.graphics.gui;
+package com.bacskai.game_engine2D.exceptions;
 
 /**
  * @author Bácskai Kristóf

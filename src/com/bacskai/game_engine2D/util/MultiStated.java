@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.bacskai.game_engine2D;
+package com.bacskai.game_engine2D.util;
 
 /**
  * @author hentesopossszum

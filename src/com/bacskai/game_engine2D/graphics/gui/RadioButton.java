@@ -3,8 +3,8 @@
  */
 package com.bacskai.game_engine2D.graphics.gui;
 
-import com.bacskai.game_engine2D.MultiStated;
 import com.bacskai.game_engine2D.graphics.Renderer;
+import com.bacskai.game_engine2D.util.MultiStated;
 
 /**
  * @author hentesopossszum

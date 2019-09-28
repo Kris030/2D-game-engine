@@ -1,7 +1,7 @@
 package com.bacskai.game_engine2D.networking;
 
-import com.bacskai.game_engine2D.StreamReciever;
-import com.bacskai.game_engine2D.Streamable;
+import com.bacskai.game_engine2D.util.StreamReciever;
+import com.bacskai.game_engine2D.util.Streamable;
 
 /**
  * 
