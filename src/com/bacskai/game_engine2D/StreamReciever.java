@@ -6,4 +6,6 @@ package com.bacskai.game_engine2D;
  */
 public interface StreamReciever {
 	
+	public void recieve(Object o);
+	
 }

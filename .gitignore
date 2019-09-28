@@ -2,8 +2,8 @@
 *.class
 
 #
-*.classpath
-*.project
+.classpath
+.project
 
 # Log file
 *.log

@@ -11,4 +11,11 @@ public class NetworkManager implements Streamable, StreamReciever {
 	
 	public NetworkManager() {}
 	
+	public void recieve(Object o) {
+	}
+	
+	public boolean write(Object o) {
+		return false;
+	}
+	
 }

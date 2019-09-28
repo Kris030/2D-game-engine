@@ -6,4 +6,6 @@ package com.bacskai.game_engine2D;
  */
 public interface Streamable {
 	
+	public boolean write(Object o);
+	
 }

@@ -51,4 +51,11 @@ public class Point {
 		this.y = y;
 	}
 	
+	public final boolean equals(Object obj) {
+		if (obj instanceof Point)
+			return ((Point) obj).x == x && ((Point) obj).y == y;
+		else
+			return super.equals(obj);
+	}
+	
 }

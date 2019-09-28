@@ -9,6 +9,8 @@ package com.bacskai.game_engine2D.graphics;
  */
 public class Renderer {
     
-    public void drawImage() {}
-
+    public void drawImage() {
+    	
+    }
+    
 }

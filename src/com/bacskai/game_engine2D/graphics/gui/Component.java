@@ -11,5 +11,7 @@ import com.bacskai.game_engine2D.Renderable;
  *
  */
 public abstract class Component extends GameObject implements Renderable {
-
+	
+	Component parent;
+	
 }
