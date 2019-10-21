@@ -4,8 +4,8 @@ package com.bacskai.game_engine2D.util;
  * 
  * @author Bácskai Kristóf
  */
-public interface StreamReciever {
+public interface StreamReciever<T> {
 	
-	public void recieve(Object o);
+	public T recieve();
 	
 }

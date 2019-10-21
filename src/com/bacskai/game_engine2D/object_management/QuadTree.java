@@ -6,10 +6,10 @@ package com.bacskai.game_engine2D.object_management;
  */
 public class QuadTree extends CollisionManager {
 	
-	/**
-	 * 
-	 */
 	public QuadTree() {
+	}
+	
+	public void checkCollisions() {
 	}
 	
 }
