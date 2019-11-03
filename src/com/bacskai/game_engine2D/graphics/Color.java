@@ -1,4 +1,4 @@
-package com.bacskai.game_engine2D;
+package com.bacskai.game_engine2D.graphics;
 
 /**
  * 

@@ -10,7 +10,7 @@ import com.bacskai.game_engine2D.util.MultiStated;
  * @author hentesopossszum
  *
  */
-public class RadioButton extends Component implements MultiStated<Boolean> {
+public abstract class RadioButton extends Component implements MultiStated<Boolean> {
 	
 	boolean ticked;
 	

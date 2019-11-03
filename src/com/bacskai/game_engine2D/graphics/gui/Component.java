@@ -6,13 +6,14 @@ import java.util.Collection;
 import com.bacskai.game_engine2D.graphics.Renderable;
 import com.bacskai.game_engine2D.graphics.Renderer;
 import com.bacskai.game_engine2D.graphics.Theme;
+import com.bacskai.game_engine2D.graphics.gui.Listeners.Listener;
 import com.bacskai.game_engine2D.object_management.CollideableObject;
 
 /**
  * @author hentesopossszum
  *
  */
-public class Component extends CollideableObject implements Renderable {
+public abstract class Component extends CollideableObject implements Renderable {
 	
 	Component parent;
 	

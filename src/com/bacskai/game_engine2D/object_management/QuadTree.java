@@ -1,5 +1,7 @@
 package com.bacskai.game_engine2D.object_management;
 
+import java.util.LinkedList;
+
 /**
  * 
  * @author Bácskai Kristóf
@@ -7,9 +9,16 @@ package com.bacskai.game_engine2D.object_management;
 public class QuadTree extends CollisionManager {
 	
 	public QuadTree() {
+		
+		
+		
 	}
 	
-	public void checkCollisions() {
+	public boolean collide(CollideableObject o1, CollideableObject o2) {
+		return false;
+	}
+	
+	public void checkCollisions(LinkedList<CollideableObject> objects) {
 	}
 	
 }

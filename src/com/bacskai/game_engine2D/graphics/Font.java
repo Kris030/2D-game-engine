@@ -1,4 +1,4 @@
-package com.bacskai.game_engine2D;
+package com.bacskai.game_engine2D.graphics;
 
 /**
  * 
@@ -8,15 +8,15 @@ public class Font {
 	
 	public static final Font DEFAULT = new Font("Roboto", Style.PLAIN, 18);
 	
-	String name;
-	Style style;
-	int size;
+	final String name;
+	final Style style;
+	final int size;
 	
 	/**
 	 * @author Bácskai Kristóf
 	 *
 	 */
-	public enum Style {
+	public static enum Style {
 		
 		PLAIN, BOLD, ITALIC, BOLD_AND_ITALIC;
 		
@@ -25,7 +25,11 @@ public class Font {
 	/**
 	 * 
 	 */
-	public Font() {}
+	public Font() {
+		name = DEFAULT.name;
+		style = DEFAULT.style;
+		size = DEFAULT.size;
+	}
 	
 	/**
 	 * @param name
@@ -57,13 +61,6 @@ public class Font {
 	}
 	
 	/**
-	 * @param name the name to set
-	 */
-	public final void setName(String name) {
-		this.name = name;
-	}
-	
-	/**
 	 * @return the style
 	 */
 	public final Style getStyle() {
@@ -71,24 +68,10 @@ public class Font {
 	}
 	
 	/**
-	 * @param style the style to set
-	 */
-	public final void setStyle(Style style) {
-		this.style = style;
-	}
-	
-	/**
 	 * @return the size
 	 */
 	public final int getSize() {
 		return size;
-	}
-	
-	/**
-	 * @param size the size to set
-	 */
-	public final void setSize(int size) {
-		this.size = size;
 	}
 	
 	public static final Font getDefault() {

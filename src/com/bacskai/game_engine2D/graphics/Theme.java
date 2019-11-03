@@ -1,8 +1,5 @@
 package com.bacskai.game_engine2D.graphics;
 
-import com.bacskai.game_engine2D.Color;
-import com.bacskai.game_engine2D.Font;
-
 /**
  * @author Bácskai Kristóf
  *

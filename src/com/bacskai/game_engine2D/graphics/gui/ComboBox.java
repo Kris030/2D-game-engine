@@ -13,7 +13,7 @@ import com.bacskai.game_engine2D.util.MultiStated;
  * @author hentesopossszum
  *
  */
-public class ComboBox<T> extends Component implements MultiStated<T> {
+public abstract class ComboBox<T> extends Component implements MultiStated<T> {
 	
 	ArrayList<T> items;
 	T selected;

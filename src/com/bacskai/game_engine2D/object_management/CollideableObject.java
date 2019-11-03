@@ -4,15 +4,9 @@ import com.bacskai.game_engine2D.geometry.Shape;
 
 /**
  * @author Bácskai Kristóf
- *
  */
-public class CollideableObject extends GameObject {
+public abstract class CollideableObject extends GameObject implements Shape {
 	
-	Shape hitbox;
-	
-	/**
-	 * 
-	 */
 	public CollideableObject() {}
 	
 }

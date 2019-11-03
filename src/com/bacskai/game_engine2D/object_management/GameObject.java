@@ -6,7 +6,7 @@ import com.bacskai.game_engine2D.geometry.Point;
  * @author Bácskai Kristóf
  *
  */
-public class GameObject extends Point {
+public abstract class GameObject extends Point {
 	
 	/** */
 	private double velX;
@@ -48,6 +48,20 @@ public class GameObject extends Point {
 	}
 	
 	/**
+	 * We gladly XChange money for nothing, time is money!
+	 * 
+	 * @param time
+	 * @return
+	 */
+	public abstract double calculateXChange(double time);
+	
+	/**
+	 *  @param time
+	 * @return
+	 */
+	public abstract double calculateYChange(double time);
+	
+	/**
 	 * 
 	 * @param time
 	 */
@@ -59,15 +73,15 @@ public class GameObject extends Point {
 	 * 
 	 * @param time
 	 */
-	private void updatePosition(long time) {
+	private final void updatePosition(long time) {
 		
 		if (!xLocked)
-			x += + velX * time;
+			calculateXChange(time);
 		else if (xLockedTo != null)
 			x = xLockedTo.getX() + xLockDistance;
 		
 		if (!yLocked)
-			y += + velY * time;
+			calculateYChange(time);
 		else if (yLockedTo != null)
 			y = yLockedTo.getY() + yLockDistance;
 		

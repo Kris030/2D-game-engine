@@ -6,7 +6,7 @@ import com.bacskai.game_engine2D.graphics.Theme;
  * @author Bácskai Kristóf
  *
  */
-public class Button extends Component {
+public abstract class Button extends Component {
 	
 	/** */
 	public Button() {}

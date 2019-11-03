@@ -2,12 +2,12 @@ package com.bacskai.game_engine2D.graphics.gui.Events;
 
 import com.bacskai.game_engine2D.graphics.gui.Component;
 
-public class SelectEvent extends Event {
+public class SelectEvent extends GUIEvent {
 	
-	public Object previus;
+	public final Object previus;
 	
-	public SelectEvent(Component source, Object previus) {
-		super(source);
+	public SelectEvent(Component source, long when, Object previus) {
+		super(source, when);
 		this.previus = previus;
 	}
 	
