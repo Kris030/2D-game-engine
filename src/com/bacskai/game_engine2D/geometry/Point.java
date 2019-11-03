@@ -9,9 +9,6 @@ public class Point {
 	public double x;
 	public double y;
 	
-	/**
-	 * 
-	 */
 	public Point() {}
 	
 	/**
@@ -26,28 +23,28 @@ public class Point {
 	/**
 	 * @return the x
 	 */
-	public final double getX() {
+	public double getX() {
 		return x;
 	}
 	
 	/**
 	 * @param x the x to set
 	 */
-	public final void setX(double x) {
+	public void setX(double x) {
 		this.x = x;
 	}
 	
 	/**
 	 * @return the y
 	 */
-	public final double getY() {
+	public double getY() {
 		return y;
 	}
 	
 	/**
 	 * @param y the y to set
 	 */
-	public final void setY(double y) {
+	public void setY(double y) {
 		this.y = y;
 	}
 	

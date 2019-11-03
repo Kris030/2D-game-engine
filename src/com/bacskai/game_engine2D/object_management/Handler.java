@@ -17,11 +17,19 @@ public class Handler {
 	
 	public Handler() {}
 	
-	public final void tickAll() {
+	/**
+	 * 
+	 * @param time
+	 */
+	public final void tickAll(long time) {
 		for (GameObject gameObject : objects)
-			gameObject.tick();
+			gameObject.tick(time);
 	}
 	
+	/**
+	 * 
+	 * @param renderer
+	 */
 	public final void renderAll(Renderer renderer) {
 		for (Renderable renderable : renderables)
 			renderable.render(renderer);

@@ -14,7 +14,8 @@ public class RadioButton extends Component implements MultiStated<Boolean> {
 	
 	boolean ticked;
 	
-	public void render(Renderer renderer) {
+	public void paintComponent(Renderer renderer) {
+		super.paintComponent(renderer);
 	}
 	
 	public Boolean getState() {

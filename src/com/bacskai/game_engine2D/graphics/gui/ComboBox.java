@@ -18,7 +18,8 @@ public class ComboBox<T> extends Component implements MultiStated<T> {
 	ArrayList<T> items;
 	T selected;
 	
-	public void render(Renderer renderer) {
+	public void paintComponent(Renderer renderer) {
+		super.paintComponent(renderer);
 	}
 	
 	public T getState() {

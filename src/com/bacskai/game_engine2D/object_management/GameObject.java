@@ -6,59 +6,70 @@ import com.bacskai.game_engine2D.geometry.Point;
  * @author Bácskai Kristóf
  *
  */
-public class GameObject {
+public class GameObject extends Point {
 	
-	private Point position;
+	/** */
+	private double velX;
+	/** */
+	private double velY;
 	
-	private double velX, velY;
-	
-	// TODO
+	/** */
 	private double xLockDistance;
+	/** */
 	private double yLockDistance;
 	
+	/** */
 	private boolean xLocked;
+	/** */
 	private boolean yLocked;
 	
+	/** */
 	private GameObject xLockedTo;
+	/** */
 	private GameObject yLockedTo;
 	
-	/**
-	 * 
-	 */
-	public GameObject() {
-		position = new Point();
-	}
+	public GameObject() {}
 	
 	/**
-	 * @param position 
-	 * 
+	 * @param position
 	 */
 	public GameObject(Point position) {
-		this.position = position;
+		this(position.x, position.y);
 	}
 	
 	/**
 	 * 
+	 * @param x
+	 * @param y
 	 */
 	public GameObject(double x, double y) {
-		position = new Point(x, y);
+		this.x = x;
+		this.y = y;
 	}
 	
-	public void tick() {
-		updatePosition();
+	/**
+	 * 
+	 * @param time
+	 */
+	public void tick(long time) {
+		updatePosition(time);
 	}
 	
-	private void updatePosition() {
+	/**
+	 * 
+	 * @param time
+	 */
+	private void updatePosition(long time) {
 		
 		if (!xLocked)
-			setX(getX() + velX);
+			x += + velX * time;
 		else if (xLockedTo != null)
-			position.x = xLockedTo.getX() + xLockDistance;
+			x = xLockedTo.getX() + xLockDistance;
 		
 		if (!yLocked)
-			setY(getY() + velY);
+			y += + velY * time;
 		else if (yLockedTo != null)
-			position.y = yLockedTo.getY() + yLockDistance;
+			y = yLockedTo.getY() + yLockDistance;
 		
 	}
 	
@@ -134,25 +145,11 @@ public class GameObject {
 	}
 	
 	/**
-	 * @return the x
-	 */
-	public final double getX() {
-		return position.x;
-	}
-	
-	/**
 	 * @param x the x to set
 	 */
 	public final void setX(double x) {
 		if (!xLocked)
-			this.position.x = x;
-	}
-	
-	/**
-	 * @return the y
-	 */
-	public final double getY() {
-		return position.y;
+			this.x = x;
 	}
 	
 	/**
@@ -160,7 +157,7 @@ public class GameObject {
 	 */
 	public final void setY(double y) {
 		if (!yLocked)
-			this.position.y = y;
+			this.y = y;
 	}
 	
 	public final double getVelX() {
@@ -180,18 +177,13 @@ public class GameObject {
 	}
 	
 	/**
-	 * @return the position
-	 */
-	public final Point getPosition() {
-		return position;
-	}
-	
-	/**
 	 * @param position the position to set
 	 */
 	public final void setPosition(Point position) {
-		if (!xLocked && !yLocked)
-			this.position = position;
+		if (!xLocked && !yLocked) {
+			x = position.x;
+			y = position.y;
+		}
 	}
 	
 }
